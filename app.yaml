@@ -1,6 +1,7 @@
-runtime: python27
+runtime: php55
 api_version: 1
-threadsafe: true
+
+
 
 handlers:
   - url: /favicon\.ico
