@@ -1,8 +1,5 @@
-applcation: smsystem-1353
-version: 1
 runtime: php55
-api-version: 1
-threadsafe: yes
+api_version: 1
 
 handlers:
   - url: /favicon\.ico
