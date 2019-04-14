@@ -3,6 +3,8 @@
 	$taikhoan='root';
 	$matkhau='';
 	$csdl='webtintuc';
-	$connect=mysqli_connect($tenmaychu,$taikhoan,$matkhau)or die('Connect fail');
+    $port=null;
+    $socket="/cloudsql/projectwebtintuc:us-central1:csdlwebtintuc";
+    $connect=mysqli_connect($tenmaychu,$taikhoan,$matkhau,$csdl,$port,$socket);
 	mysqli_select_db($connect,$csdl);
 ?>
