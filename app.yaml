@@ -11,3 +11,37 @@ handlers:
 
   - url: .*
     script: index.php
+
+  - url: /
+    script: index.php
+
+  - url: /index\.php
+    script: index.php
+
+  - url: /stylesheets
+    static_dir: stylesheets
+
+  - url: /(.*\.(gif|png|jpg))$
+    static_files: static/\1
+    upload: static/.*\.(gif|png|jpg)$
+
+  - url: /admincp/.*
+    script: admincp\index.php
+  - url: /
+    script: home.php
+
+  - url: /index\.html
+    script: home.php
+
+  - url: /stylesheets
+    static_dir: stylesheets
+
+  - url: /(.*\.(gif|png|jpg))$
+    static_files: static/\1
+    upload: static/.*\.(gif|png|jpg)$
+
+  - url: /admincp/.*
+    script: admincp\index.php
+
+  - url: /.*
+    script: not_found.php
