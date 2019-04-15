@@ -40,12 +40,8 @@ handlers:
   - url: /imgs
     static_dir: imgs
 
-  
+  - url: /
+    script: index.php
 
   - url: /admincp
     static_dir: admincp
-
-  
-
-  - url: /(.+\.(otf|ttf|woff))$
-    script: \1
