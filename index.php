@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css.css" />
+<link rel="stylesheet" type="text/css" href="stylesheet/css/css.css" />
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery/scripts.js"></script>
 <script type="text/javascript" src="jquery/scroll-to-top.js"></script>

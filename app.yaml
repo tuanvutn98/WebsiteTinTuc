@@ -20,8 +20,14 @@ handlers:
   - url: /js
     static_dir: js
 
+  - url: /
+    script: index.php
+
   - url: /index\.php
     script: index.php
+
+  - url: /stylesheet
+    static_dir: stylesheet
   
   - url: /(.+\.(ico|jpg|png|gif))$
     static_files: \1
@@ -31,8 +37,8 @@ handlers:
   - url: /modules
     static_dir: modules
 
-  - url: /uploads
-    static_dir: uploads
+  - url: /
+    script: index.php
 
-  - url: /img
-    static_dir: img
+  - url: /.*
+    script: index.php
