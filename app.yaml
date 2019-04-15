@@ -11,8 +11,8 @@ handlers:
     upload: (.*\.(php$|css$|js$))
     application_readable: true
 
-  - url: /(.*\.php$).*
-    upload: (.*.php$).*
+  - url: /index.php\.*
+    script: index.php
   
   - url: /stylesheet/css\.css
     static_files: css.css
