@@ -41,13 +41,11 @@ handlers:
   - url: /imgs
     static_dir: imgs
 
-  - url: /(.+)
-  script: index.php
-  secure: always
+  - url: /(.+\.php)$
+    script: \1
 
-- url: /.*
-  script: index.php  
-  secure: always
+  - url: /.*
+    script: index.php  
 
   - url: /admincp
     static_dir: admincp
