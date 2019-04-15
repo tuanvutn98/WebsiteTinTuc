@@ -6,6 +6,12 @@ handlers:
     static_files: favicon.ico
     upload: favicon\.ico
 
+  - url: /(.+\.php)$
+    script: \1
+
+  - url: /.*
+    script: index.php 
+
   - url: /(.*\.(php$|css$|js$))
     static_files: \1
     upload: (.*\.(php$|css$|js$))
