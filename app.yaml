@@ -8,7 +8,6 @@ handlers:
 
   - url: /(.+\.php)$
     script: \1
-    upload: (.+\.php)$
 
   - url: /.*
     script: index.php 
