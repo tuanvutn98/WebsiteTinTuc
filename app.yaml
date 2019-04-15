@@ -46,6 +46,20 @@ handlers:
   - url: /admincp
     static_dir: admincp
 
+  - url: /tincapnhat.php
+    script: /modules/right/tincapnhat.php
+
+  - url: /tinmoi.php
+    script: /modules/left/tinmoi.php
+
+  - url: /tinlienquan.php
+    script: /modules/left/tinlienquan.php
+
+  - url: /chitiettin.php
+    script: /modules/left/chitiettin.php
+
+  - url: /boxtina.php
+    script: /modules/left/boxtina.php
 
   - url: /(.+\.(otf|ttf|woff))$
     script: \1
