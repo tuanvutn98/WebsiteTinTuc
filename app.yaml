@@ -31,15 +31,12 @@ handlers:
     upload: (.+\.(ico|jpg|png|gif))$
     application_readable: true
 
-  - url: /admincp/.*
-    script_dir: admincp/.*
-
   - url: /modules
     static_dir: modules
 
   - url: /uploads
     static_dir: uploads
-    
+
   - url: /img
     static_dir: img
 
