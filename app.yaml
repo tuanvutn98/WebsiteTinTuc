@@ -6,15 +6,18 @@ handlers:
     static_files: favicon.ico
     upload: favicon\.ico
 
-  - url: /(.+\.php)$
+  - url: /
+    script: index.php
+
+  - url: /index\.php/(.*)
+    script: index.php/\1
+  
+  - url: /(.+\.php)(.*)$
     script: \1
 
-  - url: /.*
-    script: index.php 
-
-  - url: /(.*\.(php$|css$|js$))
+  - url: /(.*\.(htm$|html$|css$|js$))
     static_files: \1
-    upload: (.*\.(php$|css$|js$))
+    upload: (.*\.(htm$|html$|css$|js$))
     application_readable: true
 
   
