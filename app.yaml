@@ -14,13 +14,7 @@ handlers:
   - url: /(.+\.php).*
     upload: (.+.php).*
   
-  - url: /stylesheet/css\.css
-    static_files: css.css
-    upload: stylesheet/css\.css
 
-  - url: /admincp/css\.css
-    static_files: css.css
-    upload: admincp/css\.css
 
 
   - url: /css
