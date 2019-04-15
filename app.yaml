@@ -26,9 +26,6 @@ handlers:
   - url: /js
     static_dir: js
 
-  - url: /index\.php
-    script: index.php
-
   - url: /stylesheet
     static_dir: stylesheet
   
@@ -39,12 +36,6 @@ handlers:
 
   - url: /modules
     static_dir: modules
-
-  - url: /modules/left\.*\.php
-    upload: modules/left\.*\.php
-
-  - url: /modules/right\.*\.php
-    upload: modules/right\.*\.php
 
   - url: /imgs
     static_dir: imgs
