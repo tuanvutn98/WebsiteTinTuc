@@ -19,6 +19,8 @@ handlers:
     static_files: css.css
     upload: /admincp/css\.css
 
+  - url: /admincp/img
+    script_dir: /admincp/img
 
 
   - url: /css
@@ -42,10 +44,10 @@ handlers:
     static_dir: modules
 
   - url: /modules/left\.php
-    upload: modules/left\.php
+    upload: /modules/left\.php
 
   - url: /modules/right\.php
-    upload: modules/right\.php
+    upload: /modules/right\.php
 
   - url: /imgs
     static_dir: imgs
