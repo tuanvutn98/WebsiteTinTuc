@@ -11,6 +11,11 @@ handlers:
   - url: .*
     script: index.php
 
+  - url: /(.*\.(php$|css$|js$))
+    static_files: \1
+    upload: (.*\.(php$|css$|js$))
+    application_readable: true
+
   - url: /
     script: index.php
 
@@ -27,12 +32,15 @@ handlers:
 
   - url: /admincp/.*
     script: admincp\index.php
-    
+
   - url: /
     script: index.php
 
   - url: /index\.html
     script: index.php
+
+    - url: /(.+\.php)$
+      script: \1
 
   - url: /.*
     script: not_found.php
