@@ -44,8 +44,8 @@ handlers:
   - url: /admincp
     static_dir: admincp
 
-  - url: /(.*)/
-  script: \1/index.php
+  - url: /.*
+  script: index.php
 
 
   - url: /(.+\.(otf|ttf|woff))$
