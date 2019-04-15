@@ -11,8 +11,6 @@ handlers:
     upload: (.*\.(php$|css$|js$))
     application_readable: true
 
-  - url: /index.php\.*
-    script: index.php
   
   - url: /stylesheet/css\.css
     static_files: css.css
@@ -43,8 +41,13 @@ handlers:
   - url: /imgs
     static_dir: imgs
 
-  - url: /
-    script: index.php
+  - url: /(.+)
+  script: index.php
+  secure: always
+
+- url: /.*
+  script: index.php  
+  secure: always
 
   - url: /admincp
     static_dir: admincp
