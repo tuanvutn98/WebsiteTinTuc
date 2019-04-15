@@ -32,7 +32,7 @@ handlers:
     application_readable: true
 
   - url: /admincp/.*
-    script_dir: admincp
+    script_dir: admincp/.*
 
   - url: /modules
     static_dir: modules
