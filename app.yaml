@@ -56,5 +56,5 @@ handlers:
   - url: /.*
     script: index.php  
 
-  - url: /admincp/index.php
+  - url: /admincp
     script: admincp/index.php
