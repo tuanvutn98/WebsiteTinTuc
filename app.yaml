@@ -21,9 +21,6 @@ handlers:
   - url: /js
     static_dir: js
 
-  - url: /
-    script: index.php
-
   - url: /index\.php
     script: index.php
 
@@ -40,3 +37,6 @@ handlers:
 
   - url: /
     script: index.php
+
+  - url: /(.+\.(otf|ttf|woff))$
+    script: \1
