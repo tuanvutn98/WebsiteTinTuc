@@ -19,9 +19,6 @@ handlers:
     static_files: css.css
     upload: admincp/css\.css
 
-  - url: /admincp/img
-    script_dir: img
-
 
   - url: /css
     static_dir: css
