@@ -34,11 +34,5 @@ handlers:
   - url: /
     script: index.php
 
-  - url: /index\.html
-    script: index.php
-
-    - url: /(.+\.php)$
-      script: \1
-
   - url: /.*
     script: not_found.php
