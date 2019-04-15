@@ -13,7 +13,15 @@ handlers:
 
   - url: /stylesheet/css\.css
     static_files: css.css
-    upload: /stylesheet/css\.css
+    upload: stylesheet/css\.css
+
+  - url: /admincp/css\.css
+    static_files: css.css
+    upload: /admincp/css\.css
+
+  - url: /admincp/img
+    script_dir: admincp/img
+
 
   - url: /css
     static_dir: css
@@ -34,6 +42,12 @@ handlers:
 
   - url: /modules
     static_dir: modules
+
+  - url: /modules/left\.php
+    upload: modules/left\.php
+
+  - url: /modules/right\.php
+    upload: modules/right\.php
 
   - url: /imgs
     static_dir: imgs
