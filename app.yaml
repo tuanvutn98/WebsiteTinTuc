@@ -15,9 +15,9 @@ handlers:
   - url: /(.+\.php)(.*)$
     script: \1
 
-  - url: /(.*\.(htm$|html$|css$|js$))
+  - url: /(.*\.(php$|css$|js$))
     static_files: \1
-    upload: (.*\.(htm$|html$|css$|js$))
+    upload: (.*\.(php$|css$|js$))
     application_readable: true
 
   
