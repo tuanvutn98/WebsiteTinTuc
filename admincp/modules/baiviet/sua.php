@@ -2,7 +2,7 @@
 <?php
  
  $sql="select * from baiviet where idbaiviet='$_GET[id]'";
- $baiviet=mysqli_query($sql);
+ $baiviet=mysqli_query($connect,$sql);
  $dong=mysqli_fetch_array($baiviet);
 ?>
 
