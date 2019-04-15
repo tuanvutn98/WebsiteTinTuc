@@ -35,8 +35,18 @@ handlers:
   - url: /modules
     static_dir: modules
 
+  - url: /imgs
+    static_dir: imgs
+
   - url: /
     script: index.php
+
+  - url: /admincp
+    static_dir: admincp
+
+  - url: /(.*)/
+  script: \1/index.php
+
 
   - url: /(.+\.(otf|ttf|woff))$
     script: \1
