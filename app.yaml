@@ -20,9 +20,7 @@ handlers:
   - url: /stylesheets
     static_dir: stylesheets
 
-  - url: /(.*\.(gif|png|jpg))$
-    static_files: imgs/\1
-    upload: imgs/.*\.(gif|png|jpg)$
+
 
   - url: /admincp/.*
     script: admincp\index.php
