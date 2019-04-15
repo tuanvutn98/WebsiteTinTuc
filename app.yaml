@@ -40,7 +40,7 @@ handlers:
   - url: /imgs
     static_dir: imgs
 
-  - url: /
+  - url: /.*
     script: index.php
 
   - url: /admincp
