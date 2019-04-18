@@ -4,7 +4,7 @@
  
 ?>
  <div class="boxtin " style="margin:0 0 2px 0">
-	<p>Tin cập nhập</p>
+	<p>Tin cập nhật</p>
     </div>
     	<ul>
         <?php
