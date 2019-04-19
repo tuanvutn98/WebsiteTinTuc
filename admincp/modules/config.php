@@ -4,7 +4,7 @@
 	$matkhau='';
 	$csdl='webtintuc';
 	$port=null;
-	$socket="/cloudsql/projectwebtintuc:us-central1:csdlwebtintuc";
+	$socket="/cloudsql/news-238114:us-central1:websitetintuc";
 	$connect=mysqli_connect($tenmaychu,$taikhoan,$matkhau,$csdl,$port,$socket);
 	mysqli_select_db($connect,$csdl);
 ?>
