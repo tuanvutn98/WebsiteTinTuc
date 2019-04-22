@@ -1,0 +1,77 @@
+{
+	"runtime": "php55",
+	"api_version": 1,
+	"handlers": [
+		{
+			"url": "/favicon\\.ico",
+			"static_files": "favicon.ico",
+			"upload": "favicon\\.ico"
+		},
+		{
+			"url": "/",
+			"script": "index.php"
+		},
+		{
+			"url": "/index\\.php/(.*)",
+			"script": "index.php/\\1"
+		},
+		{
+			"url": "/(.+\\.php)(.*)$",
+			"script": "\\1"
+		},
+		{
+			"url": "/(.*\\.(php$|css$|js$))",
+			"static_files": "\\1",
+			"upload": "(.*\\.(php$|css$|js$))",
+			"application_readable": true
+		},
+		{
+			"url": "/stylesheet/css\\.css",
+			"static_files": "css.css",
+			"upload": "stylesheet/css\\.css"
+		},
+		{
+			"url": "/admincp/css\\.css",
+			"static_files": "css.css",
+			"upload": "admincp/css\\.css"
+		},
+		{
+			"url": "/css",
+			"static_dir": "css"
+		},
+		{
+			"url": "/js",
+			"static_dir": "js"
+		},
+		{
+			"url": "/stylesheet",
+			"static_dir": "stylesheet"
+		},
+		{
+			"url": "/(.+\\.(ico|jpg|png|gif))$",
+			"static_files": "\\1",
+			"upload": "(.+\\.(ico|jpg|png|gif))$",
+			"application_readable": true
+		},
+		{
+			"url": "/modules",
+			"static_dir": "modules"
+		},
+		{
+			"url": "/imgs",
+			"static_dir": "imgs"
+		},
+		{
+			"url": "/(.+\\.php)$",
+			"script": "\\1"
+		},
+		{
+			"url": "/.*",
+			"script": "index.php"
+		},
+		{
+			"url": "/admincp",
+			"script": "admincp/index.php"
+		}
+	]
+}
