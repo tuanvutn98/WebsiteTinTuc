@@ -1,10 +1,10 @@
 <?php
-	$tenmaychu='localhost';
-	$taikhoan='root';
-	$matkhau='';
+	$tenmaychu='websitetintuc.cvy6zdomc6lo.ap-southeast-1.rds.amazonaws.com';
+	$taikhoan='tuanvutn98';
+	$matkhau='23111998';
 	$csdl='webtintuc';
-	$port=null;
-	$socket="/cloudsql/news-238114:us-central1:websitetintuc";
-	$connect=mysqli_connect($tenmaychu,$taikhoan,$matkhau,$csdl,$port,$socket);
+    $port="3306";
+    $socket="";
+    $connect=mysqli_connect($tenmaychu,$taikhoan,$matkhau,$csdl,$port,$socket);
 	mysqli_select_db($connect,$csdl);
 ?>
