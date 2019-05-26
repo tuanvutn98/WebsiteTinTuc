@@ -12,4 +12,4 @@ $(document).ready(function(){
 		}
 		});
 	
-});// JavaScript Document - Download source code mien phi tai Sharecode.vn
+});

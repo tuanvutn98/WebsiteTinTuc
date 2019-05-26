@@ -1,60 +1,47 @@
+applcation: smsystem-1353
+version: 1
 runtime: php55
-api_version: 1
+api-version: 1
+threadsafe: yes
 
 handlers:
   - url: /favicon\.ico
     static_files: favicon.ico
     upload: favicon\.ico
 
+  - url: .*
+    script: index.php
+
   - url: /
     script: index.php
 
-  - url: /index\.php/(.*)
-    script: index.php/\1
-  
-  - url: /(.+\.php)(.*)$
-    script: \1
+  - url: /index\.php
+    script: index.php
 
-  - url: /(.*\.(php$|css$|js$))
-    static_files: \1
-    upload: (.*\.(php$|css$|js$))
-    application_readable: true
+  - url: /stylesheets
+    static_dir: stylesheets
 
-  
-  - url: /stylesheet/css\.css
-    static_files: css.css
-    upload: stylesheet/css\.css
+  - url: /(.*\.(gif|png|jpg))$
+    static_files: static/\1
+    upload: static/.*\.(gif|png|jpg)$
 
-  - url: /admincp/css\.css
-    static_files: css.css
-    upload: admincp/css\.css
+  - url: /admincp/.*
+    script: admincp\index.php
+  - url: /
+    script: home.php
 
+  - url: /index\.html
+    script: home.php
 
-  - url: /css
-    static_dir: css
+  - url: /stylesheets
+    static_dir: stylesheets
 
-  - url: /js
-    static_dir: js
+  - url: /(.*\.(gif|png|jpg))$
+    static_files: static/\1
+    upload: static/.*\.(gif|png|jpg)$
 
-  - url: /stylesheet
-    static_dir: stylesheet
-  
-  - url: /(.+\.(ico|jpg|png|gif))$
-    static_files: \1
-    upload: (.+\.(ico|jpg|png|gif))$
-    application_readable: true
-
-  - url: /modules
-    static_dir: modules
-
-  - url: /imgs
-    static_dir: imgs
-
-  - url: /(.+\.php)$
-    script: \1
+  - url: /admincp/.*
+    script: admincp\index.php
 
   - url: /.*
-    script: index.php  
-
-  - url: /admincp
-    script: admincp/index.php
+    script: not_found.php

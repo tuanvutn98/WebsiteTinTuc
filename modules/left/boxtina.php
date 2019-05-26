@@ -10,7 +10,7 @@
     </div>
 	<div class="content_left " style="width:100%;margin-top:10px;">
     	<div class="box1">
-        	<img src="<?php echo $dong['anhminhhoa']?>" width="350" height="250" />
+        	<img src="<?php echo $dong['anhminhhoa']?>" width="auto" height="250" />
             <p class="tieude"><a href="index.php?xem=chitiet&id=<?php echo $dong['idbaiviet'] ?>"><?php echo $dong['tenbaiviet'] ?></a></p>
             <p class="tomtat"><?php echo $dong['tomtat'] ?></p>
         </div>

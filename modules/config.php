@@ -1,10 +1,8 @@
 <?php
-	$tenmaychu='websitetintuc.cvy6zdomc6lo.ap-southeast-1.rds.amazonaws.com';
-	$taikhoan='tuanvutn98';
-	$matkhau='23111998';
-	$csdl='webtintuc';
-    $port="3306";
-    $socket="";
-    $connect=mysqli_connect($tenmaychu,$taikhoan,$matkhau,$csdl,$port,$socket);
-	mysqli_select_db($connect,$csdl);
+$tenmaychu='localhost';
+$taikhoan='root';
+$matkhau='12345';
+$csdl='webtintuc';
+$connect=mysqli_connect($tenmaychu,$taikhoan,$matkhau);
+mysqli_select_db($connect,$csdl);
 ?>

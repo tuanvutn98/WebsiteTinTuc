@@ -1,6 +1,4 @@
-
-
-<div id="content">
+<div class="content">
 	<div class="content_left">
     	<?php
 		if(isset($_GET['xem'])){
@@ -30,9 +28,7 @@
 			include('modules/right/tincapnhap.php');
 
 		?>
-    </div>
       <!-- Ket thuc content_right -->
-
 </div>
-
+<div class="clear"></div>
 <!-- ket thuc content 1 -->
